@@ -10,13 +10,11 @@ class List extends Component {
   }
 
   id () {
-    console.log(nanoid(4))
     return 'key-' + nanoid(4)
   }
 
   render() {
     const { loading, items } = this.props;
-    console.log(this.props)
 
     if (loading) {
       return <div>Loading...</div>;
