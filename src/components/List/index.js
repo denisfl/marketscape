@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchCompanies } from '../../actions'
+import {id} from '../../helpers'
 
-import nanoid from 'nanoid'
+import { fetchCompanies } from '../../actions'
+import Section from '../Section'
+import './styles.css'
+
 
 class List extends Component {
   componentDidMount () {
     this.props.dispatch(fetchCompanies());
-  }
-
-  id () {
-    return 'key-' + nanoid(4)
   }
 
   render() {
@@ -21,13 +20,9 @@ class List extends Component {
     }
 
     return (
-      <div>
-        {Object.keys(items).map((key, index) => (
-          <div key={index}>
-            {items[key].map((item, j) => (
-              <div key={j}>{item.name}</div>
-            ))}
-          </div>
+      <div className="List">
+        {Object.keys(items).map(key => (
+          <Section list={items[key]} title={key} key={id()} />
         ))}
       </div>
     );
