@@ -1,0 +1,8 @@
+.Item {
+  text-align: center;
+}
+.Item-title {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
