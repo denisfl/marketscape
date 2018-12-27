@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import {id} from '../../helpers'
 
 import { fetchCompanies } from '../../actions'
 import Section from '../Section'
@@ -22,7 +21,7 @@ class List extends Component {
     return (
       <div className="List">
         {Object.keys(items).map(key => (
-          <Section list={items[key]} title={key} key={id()} />
+          <Section list={items[key]} title={key} key={key} />
         ))}
       </div>
     );

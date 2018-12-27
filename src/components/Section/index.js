@@ -1,5 +1,4 @@
 import React from 'react';
-import {id} from '../../helpers'
 
 import Item from '../Item'
 import Title from '../Title'
@@ -10,7 +9,7 @@ const Section = ({ list, title }) => {
       <Title title={title} />
       <div className="Section-items">
         {list.map(item => (
-          <Item key={id()}
+          <Item key={item.logo}
                 name={item.name}
                 title={item.title}
                 logoUrl={item.logo}
