@@ -2,7 +2,7 @@ import {
   FETCH_COMPANIES_BEGIN,
   FETCH_COMPANIES_SUCCESS,
   FETCH_COMPANIES_FAILURE
-} from '../actions';
+} from 'layout/List/redux/actions';
 
 const initialState = {
   items: [],
