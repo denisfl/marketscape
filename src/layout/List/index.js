@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { fetchCompanies } from '../../actions'
-import Section from '../Section'
-import './styles.css'
+import { fetchCompanies } from './redux/actions'
+import Section from 'startups/Section'
 
+import './styles.css'
 
 class List extends Component {
   componentDidMount () {

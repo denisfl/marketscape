@@ -1,7 +1,9 @@
 import React from 'react';
 
-import Item from '../Item'
-import Title from '../Title'
+import Item from 'startups/Item'
+import Title from 'startups/Title'
+
+import './styles.css'
 
 const Section = ({ list, title }) => {
   return (

@@ -1,4 +1,4 @@
-import companiesJSON from '../data.json'
+import companiesJSON from 'data.json'
 
 function fakeGetCompanies() {
   return new Promise(resolve => {
