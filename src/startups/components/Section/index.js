@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Item from 'startups/Item'
-import Title from 'startups/Title'
+import Item from 'startups/components/Item'
+import Title from 'startups/components/Title'
 
 import './styles.css'
 

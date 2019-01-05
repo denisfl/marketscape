@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { fetchCompanies } from './redux/actions'
-import Section from 'startups/Section'
+import { fetchCompanies } from 'startups/redux/actions'
+import Section from 'startups/components/Section'
 
 import './styles.css'
 
