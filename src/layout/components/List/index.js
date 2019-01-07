@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { fetchCompanies } from 'startups/redux/actions'
+import { fetchStartups } from 'startups/redux/actions'
 import Section from 'startups/components/Section'
 
 import './styles.css'
 
 class List extends Component {
   componentDidMount () {
-    this.props.dispatch(fetchCompanies());
+    this.props.dispatch(fetchStartups());
   }
 
   render() {
@@ -29,9 +29,9 @@ class List extends Component {
 }
 
 const mapStateToProps = state => ({
-  items: state.companies.items.startups,
-  loading: state.companies.loading,
-  error: state.companies.error
+  items: state.startups.items.startups,
+  loading: state.startups.loading,
+  error: state.startups.error
 });
 
 

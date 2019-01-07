@@ -1,8 +1,8 @@
 import {
-  FETCH_COMPANIES_BEGIN,
-  FETCH_COMPANIES_SUCCESS,
-  FETCH_COMPANIES_FAILURE
-} from 'layout/List/redux/actions';
+  FETCH_STARTUPS_BEGIN,
+  FETCH_STARTUPS_SUCCESS,
+  FETCH_STARTUPS_FAILURE
+} from 'startups/redux/actions';
 
 const initialState = {
   items: [],
@@ -10,21 +10,21 @@ const initialState = {
   error: null
 }
 
-export default function companiesReducer(state = initialState, action) {
+export default function startupsReducer(state = initialState, action) {
   switch(action.type) {
-    case FETCH_COMPANIES_BEGIN:
+    case FETCH_STARTUPS_BEGIN:
       return {
         ...state,
         loading: true,
         error: null
       };
-    case FETCH_COMPANIES_SUCCESS:
+    case FETCH_STARTUPS_SUCCESS:
       return {
         ...state,
         loading: false,
-        items: action.payload.companies
+        items: action.payload.startups
       };
-    case FETCH_COMPANIES_FAILURE:
+    case FETCH_STARTUPS_FAILURE:
       return {
         ...state,
         loading: false,
