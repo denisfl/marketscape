@@ -1,0 +1,5 @@
+.Section-title {
+  margin-bottom: var(--step);
+  text-transform: uppercase;
+  font-size: .8rem;
+}
